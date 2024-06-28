@@ -1,0 +1,350 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0909;
+}
+
+/* Navbar */
+.navbar {
+    /* background-color:black; */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.side-menu-icon {
+    margin-right: 10px;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.logo img {
+    max-height: 70px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+
+.delivery-icon,
+.pickup-icon {
+    margin: 0 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+.pickup-icon a {
+    color: white;
+    font-size: 1.5rem;
+}
+/* .delivery-icon a {
+   font-size: 2rem;
+} */
+
+.delivery-icon {
+    border: 2px solid red; /* Added red border */
+}
+
+/* .pickup-icon {
+    background-color: black;
+} */
+
+.delivery-icon:hover,
+.pickup-icon:hover {
+    border-color: red;
+    border: 2px solid red;
+}
+
+.login-button .button {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.login-button .button:hover {
+    background-color: #ff3333;
+}
+
+/* Category Buttons */
+.category {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    width: 100%; /* Adjust width as needed */
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: none; /* Remove border */
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.btn:first-child {
+    background-color: red;
+    color: #fff;
+}
+
+.btn:not(:first-child) {
+    background-color: rgb(33, 30, 30);
+    color: white;
+    font-weight: 600;
+    border: #0b0909;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* main section */
+.boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.box {
+    width: 250px;
+    border: none;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: #1c1919;
+    border-radius: 5%;
+}
+
+.box img:hover {
+    transform: translateY(-10px);
+}
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box img {
+    width: 100%;
+    display: block;
+}
+
+.box-content {
+    padding: 10px;
+    background-color: #1c1919;
+    text-align: center;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.box:hover .box-content {
+    transform: translateY(0);
+}
+
+.box-content h2 {
+    margin-top: 0;
+}
+
+.box-content p {
+    margin-bottom: 10px;
+}
+
+.box-content button {
+    padding: 10px 20px;
+    border-radius: 12%;
+    background-color: #ad1c0f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.box-content button:hover {
+    background-color: #d61815;
+}
+/* cart section */
+
+
+.item-cart {
+    max-width: 900px; /* Adjust width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    height: auto; /* Remove fixed height */
+    background-color: #1a1414; /* Dark background color */
+    color: white; /* Light text color */
+}
+
+.cart-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-heading h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.heading-underline {
+    width: 150px; /* Adjust underline width as needed */
+    border: 1px solid white; /* White underline */
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 20px;
+}
+
+.item-image {
+    width: 400px; /* Adjust image size as needed */
+    text-align: center; /* Center image horizontally */
+    margin-bottom: 20px;
+}
+
+.item-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.item-image img:hover {
+    transform: scale(1.1); /* Scale up image on hover */
+}
+
+.item-details {
+    text-align: center; /* Center text content */
+}
+
+.item-details h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Increase padding for larger size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Increase border radius for rounded corners */
+    font-size: 18px; /* Increase font size for larger text */
+    text-transform: uppercase; /* Convert text to uppercase */
+    margin-top: 15px;
+}
+
+.btn-red:hover {
+    background-color: darkred;
+}
+
+
+.btn-red:hover {
+    background-color: darkred;
+}
+/* login section */
+.login-form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #1c1111; /* Black background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    color: white; /* Text color for the form */
+}
+
+.login-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.login-image {
+    flex: 0 0 40%;
+    padding-right: 20px;
+}
+
+.login-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.login-details {
+    flex: 0 0 60%;
+}
+
+.login-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white; /* Heading color */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white; /* Label color */
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333; /* Input text color */
+    background-color: #fff; /* Input background color */
+}
+
+.btn-blue {
+    background-color: #e02e1a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+}
+
+.btn-blue:hover {
+    background-color: #dd3d3d;
+}
+
